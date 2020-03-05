@@ -39,7 +39,7 @@ sh label: '', script: 'mvn clean package'
 	{
 
 	steps {
-		nexusArtifactUploader artifacts: [[artifactId: 'gameoflife', classifier: '', file: 'gameoflife-web/target/gameoflife.war', type: 'war']], credentialsId: '95333090-9821-42c8-ae21-8899ee100b04', groupId: 'new', nexusUrl: '3.85.167.144:8081/nexus', nexusVersion: 'nexus2', protocol: 'http', repository: 'sam123', version: '$BUILD_NUMBER'
+		nexusArtifactUploader artifacts: [[artifactId: 'gameoflife ', classifier: '', file: 'gemaoflife-web/target/gameoflife.war', type: 'war']], credentialsId: '1234', groupId: '1234', nexusUrl: '52.87.226.7:8081/nexus', nexusVersion: 'nexus2', protocol: 'http', repository: 'sam123', version: 'BUILD_ID', type: 'war']], credentialsId: '95333090-9821-42c8-ae21-8899ee100b04', groupId: 'new', nexusUrl: '3.85.167.144:8081/nexus', nexusVersion: 'nexus2', protocol: 'http', repository: 'sam123', version: '$BUILD_NUMBER'
 }
 }
 stage ('Deploy war')
