@@ -45,7 +45,7 @@ sh label: '', script: 'mvn clean package'
 stage ('Deploy war')
 {
 steps {
-sh label: '', script: 'ansible-playbook deploy.yml'
+sh label: '', script: 'ansible playbook deploye'
     }
   }
  }
